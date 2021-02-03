@@ -57,9 +57,11 @@ public:
     /**
      * This method prints the List
     */
-    friend std::istream(std::istream &in, List<T> list);
+    friend std::istream(std::istream &in, List<T> &list);
 
 private:
+    T *buffer;
+
     int last_index;
     int capacihty;
 
