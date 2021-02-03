@@ -1,3 +1,4 @@
-#Data structures
+Data structures
+===============
 
 Yazd university
