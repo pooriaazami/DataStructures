@@ -57,7 +57,7 @@ public:
     /**
      * This method prints the List
     */
-    friend std::istream(std::istream &in, List<T> &list);
+    friend std::ostream &operator<<(std::ostream &out, const List<T> &list);
 
 private:
     T *buffer;
