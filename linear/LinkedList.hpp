@@ -22,7 +22,7 @@ private:
 
         T getData();
 
-        void setNext(Node *next);
+        void setNext(Node *n);
 
         Node *getNext();
     };
