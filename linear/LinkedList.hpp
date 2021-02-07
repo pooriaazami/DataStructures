@@ -10,70 +10,55 @@
 /**
  * Linked list Interface
  */
-template<typename T>
-class LinkedList {
-private:
-    class Node {
-    private:
-        T data;
-        Node *next;
-    public:
-        void setData(T t);
-
-        T getData();
-
-        void setNext(Node *n);
-
-        Node *getNext();
-    };
-
+template <typename T>
+class LinkedList
+{
 public:
     // It is used to append the specified element to the end of a list
-    void addLast(T element);
+    virtual void addLast(T element) = 0;
 
     // It is used to insert the specified element at the specified position index in a list.
-    void add(int index, T element);
+    virtual void add(int index, T element) = 0;
 
     // It is used to insert the given element at the beginning of a list
-    void addFirst(T element);
+    virtual void addFirst(T element) = 0;
 
     // It is used to remove all the elements from a list
-    void clear();
+    virtual void clear() = 0;
 
     // It is used to return the element at the specified position in a list
-    T get(int index);
+    virtual T get(int index) = 0;
 
     // It is used to return the first element in a list
-    T getFirst();
+    virtual T getFirst() = 0;
 
     // It is used to return the last element in a list
-    T getLast();
+    virtual T getLast() = 0;
 
     // It is used to return true if an element be in a list
-    bool contains(T element);
+    virtual bool contains(T element) = 0;
 
     // It is used to return the index in a list of the first occurrence of the specified element, or -1 if the list does not contain any element.
-    int indexOf(T element);
+    virtual int indexOf(T element) = 0;
 
     //It is used to remove the element at the specified position in a list.
-    T remove(int index);
+    virtual T remove(int index) = 0;
 
     //	It is used to remove the first occurrence of the specified element in a list, if it is present.
-    bool remove(T element);
+    virtual bool remove(T element) = 0;
 
     //It removes and returns the first element from a list.
-    T removeFirst();
+    virtual T removeFirst() = 0;
 
     //It removes and returns the last element from a list.
-    T removeLast();
+    virtual T removeLast() = 0;
 
     //It replaces the element at the specified position in a list with the specified element.
-    T set(int index, T element);
+    virtual T set(int index, T element) = 0;
 
     //	It is used to return the number of elements in a list.
-    int size();
+    virtual int size() = 0;
 
     // If the list is empty returns true otherwise returns false
-    bool isEmpty();
-
+    virtual bool isEmpty() = 0;
 };
