@@ -18,6 +18,8 @@ private:
     const SEX sex;
 
 public:
+    Person();
+
     Person(std::string name, std::string family, int age, SEX sex) : name(name), family(family), age(age), sex(sex){};
 
     std::string get_name();
