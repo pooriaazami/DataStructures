@@ -37,7 +37,7 @@ void Person::set_age(int age)
 {
     if (age > 0)
         this->age = age;
-        }
+}
 
 SEX Person::get_sex()
 {
