@@ -42,3 +42,30 @@ SEX Person::get_sex()
 {
     return sex;
 }
+
+std::ostream Person::&operator<<(std::ostream &out, const Person person)
+{
+    out << "Person("
+        << "name=" << person.get_name() << "\tfamily=" << person.get_family() << "\tage=" << person.get_age() << ;
+
+    cout << "\tsex=";
+    if (person.get_sex == SEX::MAN)
+        cout << "man";
+    else
+        cout << "woman";
+
+    cout << ")";
+}
+
+std::istream Person::&operator>>(std::istream &in, Person person)
+{
+    in >> person.name >> Person.famiy >> Person.age;
+
+    int check;
+    in >> check;
+
+    if (check == 1)
+        person.sex = SEX::MAN;
+    else
+        person.sex = SEX::WOMAN;
+}
