@@ -1,0 +1,1 @@
+g++ .\unit_tests\Models\model_tests\person_test.cpp .\unit_tests\Models\Person.cpp -std=c++11 -o person_test.exe

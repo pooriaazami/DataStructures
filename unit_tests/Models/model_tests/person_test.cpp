@@ -46,6 +46,11 @@ void constructor_test()
 
 void default_constructor_test()
 {
+    Person p1;
+    std::cout << p1 << endl;
+
+    Person p2();
+    std::cout << p2 << std::endl;
 }
 
 void get_name_test()
